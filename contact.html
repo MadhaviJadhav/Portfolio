@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<style>
+    .container .main {
+        display: block;
+    }
+
+    .container .main .header {
+        text-align: center;
+        font-size: 50px;
+        padding: 50px;
+    }
+
+    .container .main .card {
+        /* margin: auto; */
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        /* padding-top: 140px; */
+    }
+
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #27962d;
+    }
+
+    .container .main .card li {
+        font-size: 20px;
+    }
+    
+
+    @media (max-width:931px) {
+        .container .main .header {
+            margin-bottom: 20px;
+        }
+
+        .container .main .card {
+            width: 100%;
+            flex-direction: column;
+            margin-top: -60px;
+
+        }
+
+        .container .main .card .left {
+            margin: auto;
+            margin-bottom: 60px;
+            width: 40%;
+        }
+
+    }
+    @media (max-width:770px) {
+        /* .container .main .header {
+            margin-bottom: 20px;
+        } */
+        .container .main  .card .left .info
+        {
+            display: block;
+            width: 100%;
+        }
+        .container .main  .card .left .info li{
+            /* width: 100%; */
+            /* flex-direction: column;
+            margin-top: -60px; */
+            font-size:20px;
+
+        }
+
+        .container .main .card .right .form {
+            margin: auto;
+            /*margin-bottom: 60px; */
+            width: 50%;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </nav>
+        </div>
+        <div class="main">
+            <h1 class="header">Contact Me</h1>
+            <div class="card">
+                <div class="left">
+                    <div class="info">
+                        <p>To get in touch with me</p>
+                        <li>Name : Madhavi Jagannath Jadhav</li>
+                        <li>Address : Kamothe, Navi Mumbai</li>
+                        <li>Email Id : madhavijadhavi020@gmail.com</li>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="form">
+                        <form action="/action_page.php">
+                            <label for="name">Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" name="email" placeholder="Your Email Address..">
+
+                            <label for="Message">Message</label><br>
+                            <textarea name="Message" id="Message" cols="50" rows="5"></textarea>
+
+                            <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<style>
+    .container .main {
+        display: block;
+    }
+    .container .main .header{
+        text-align: center;
+        font-size: 50px;
+        padding: 50px;
+    }
+    .container .main .card  {
+        /* margin: auto; */
+        display: flex;
+        flex-direction: row;
+        padding-top: 140px;
+    }
+
+    .container .main .card .box {
+        /* margin: auto; */
+        /* border: 2px solid black; */
+        margin-left: 10%;
+        width: 20%;
+        height: 30%;
+        justify-content: center;
+        text-align: center;
+        padding-top: 5px;
+        padding: 3px;
+        list-style: none;
+    }
+
+    .container .main .card .box i {
+        color: rgb(0, 142, 198);
+    }
+    @media  (max-width:768px) {
+        .container .main .card{
+            flex-direction: column;
+            margin-top: -60px;
+            
+        }
+        .container .main .card .box{
+            margin: auto;
+            margin-bottom: 60px;
+            width: 40%;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </nav>
+        </div>
+        <div class="main">
+            <h1 class="header">My Education</h1>
+            <div class="card">
+                <div class="box"><i class="fa-solid fa-pen fa-3x"></i>
+                    <h2>SSC</h2><br>
+                    <li>Year : 2018</li>
+                    <li>Board : SSC</li>
+                    <li>School : Meru Vidyamandir Wagheshwar</li>
+                    <li>Marks : 91.20%</li>
+                </div>
+                <div class="box"><i class="fa-sharp fa-solid fa-book fa-3x"></i>
+                    <h2>HSC</h2><br>
+                    <li>Year : 2020</li>
+                    <li>Board : HSC</li>
+                    <li>School : Maharaja Sayajirao Junior Collage Satara</li>
+                    <li>Marks : 79.69%</li></div>
+                <div class="box"><i class="fa-solid fa-laptop fa-3x"></i>
+                    <h2>Under Gradute</h2><br>
+                    <li>Year : 2023(Present)</li>
+                    <li>Board : Mumbai University</li>
+                    <li>School : SIES Gradute School of Technology</li>
+                    <li>Marks : 9.52(Sem 5 : CGPA)</li></div>
+            </div>
+            </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<style>
+    .container .main {
+        display: block;
+    }
+
+    .container .main .header {
+        text-align: center;
+        font-size: 50px;
+        padding-top: 50px;
+    }
+
+    .container .main .card {
+        margin: 10%;
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 140px;
+    }
+
+    .bar {
+        width: 100%;
+        /* Full width */
+        background-color: #ddd;
+        
+        /* Grey background */
+    }
+
+    .skills {
+        text-align: right;
+        /* Right-align text */
+        padding-top: 10px;
+        /* Add top padding */
+        padding-bottom: 10px;
+        /* Add bottom padding */
+        color: white;
+        /* White text color */
+    }
+
+    .html {
+        width: 85%;
+        background-color: #02c87f;
+    }
+
+    /* Green */
+    .css {
+        width: 80%;
+        background-color: #2196F3;
+    }
+
+    /* Blue */
+    .js {
+        width: 65%;
+        background-color: #f44336;
+    }
+
+    
+    .php {
+        width: 90%;
+        background-color: #02a13c;
+    }
+
+    @media (max-width:768px) {
+        .container .main .card {
+            flex-direction: column;
+            margin-top: -60px;
+
+        }
+
+        .container .main .card .box {
+            margin: auto;
+            margin-bottom: 60px;
+            width: 40%;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </nav>
+        </div>
+        <div class="main">
+            <h1 class="header">My Skiils</h1>
+            <div class="card">
+                <p>C++ Programming</p>
+                <div class="bar">
+                    <div class="skills php">90%</div>
+                </div>
+                <p>HTML</p>
+                <div class="bar">
+                    <div class="skills html">85%</div>
+                </div>
+
+                <p>CSS</p>
+                <div class="bar">
+                    <div class="skills css">80%</div>
+                </div>
+
+                <p>JavaScript</p>
+                <div class="bar">
+                    <div class="skills js">50%</div>
+                </div>
+
+                
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

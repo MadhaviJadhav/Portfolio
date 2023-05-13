@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<style>
+    .container .main .left {
+    /* border: 2px solid black; */
+    margin: auto;
+    /* margin-left: 30%; */
+}
+.container .main .left .info{
+    font-size: 20px;
+}
+@media (max-width:768px)
+{
+    
+    .container .main .left .info{
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width:325px)
+{
+    
+    .container .main .left .info{
+        display: block;
+        width: 75%;
+        margin: auto;
+    }
+    .container .main .right img{
+        width: 250px;
+        height: 250px;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <div class="navbar">
+
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </nav>
+        </div>
+        <div class="main">
+            
+            <div class="right">
+                <img src="Madhavi.jpg" alt="">
+            </div>
+            <div class="left">
+                <div class="info">
+                    <h2>Hello,</h2>
+                    <h1>I am Madhavi Jadhav.</h1>
+                    <h3>I am a Web Developer.</h3>
+                    <br>
+                    <button>Download CV</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
